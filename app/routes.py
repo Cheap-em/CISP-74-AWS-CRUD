@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect, request, Blueprint
 from app import db, bcrypt
-from app.forms import RegistrationForm, LoginForm
-from app.models import User, Post
+from forms import RegistrationForm, LoginForm
+from models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
 bp = Blueprint('routes', __name__)
